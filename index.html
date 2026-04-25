@@ -27,21 +27,22 @@
     </section>
 
     <script>
-      const SPREADSHEET_ID = "1SU0-qVM6aN3KeTOpOeKv7pdYnVT0j1jAvrG8h9f4vPI";
+      const SPREADSHEET_ID = "1tb04GpXsWD2VRxyAqoXxL7yrS_3fR7l0250RUVC4X0w";
 
       const KEYS = {
-        title:       "Meta-Title",
-        description: "Meta-Description",
-        about:       "About",
-        project:     "UL-Project",
-        date:        "UL-Date",
-        location:    "UL-Location",
-        note:        "UL-Note",
+        title:       "브랜드명",
+        description: "제품명/라인명",
+        about:       "가격",
+        project:     "브랜드명",
+        date:        "가격",
+        location:    "소재 표기",
+        note:        "태그 형태",
         image:       "UL-Images",
+      
       };
 
       const CSV_URL =
-        `https://docs.google.com/spreadsheets/d/1SU0-qVM6aN3KeTOpOeKv7pdYnVT0j1jAvrG8h9f4vPI/export?format=csv`;
+        `https://docs.google.com/spreadsheets/d/1tb04GpXsWD2VRxyAqoXxL7yrS_3fR7l0250RUVC4X0w/export?format=csv`;
 
       function parseCSV(text) {
         const lines = text.trim().split("\n");
